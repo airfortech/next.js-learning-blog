@@ -5,4 +5,5 @@ export interface ArticleTypes {
   description: string;
   cover: string;
   date: string;
+  content: string;
 }

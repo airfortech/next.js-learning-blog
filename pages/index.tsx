@@ -4,7 +4,7 @@ import Head from "next/head";
 import { Article } from "@/components/Article/Article";
 import { markdownParser } from "@/utils/markdownParser";
 
-const ProjectsPage = ({
+const ArticlesPage = ({
   articles,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
@@ -35,4 +35,4 @@ export const getStaticProps = async () => {
   };
 };
 
-export default ProjectsPage;
+export default ArticlesPage;
