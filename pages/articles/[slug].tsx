@@ -20,10 +20,8 @@ const ArticlePage = ({
         <title>{article.title}</title>
         <meta name="description" content={article.description} />
       </Head>
-      <h1 className="text-center text-3xl mb-10">Blog</h1>
-      <ul className="flex flex-row flex-wrap mx-auto">
-        <ArticleDetails {...article} key={article.slug} />
-      </ul>
+      <h1 className="text-center text-3xl mb-10">{article.title}</h1>
+      <ArticleDetails {...article} key={article.slug} />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { ArticleTypes } from "@/types/ArticleTypes";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 export const Article = ({
@@ -20,9 +20,12 @@ export const Article = ({
           <div className="md:flex-shrink-0">
             <Image
               src={cover}
+              layout="responsive"
+              quality={90}
               width="490"
               height="225"
               alt="Blog Cover"
+              placeholder="blur"
               className="object-fill w-full rounded-lg rounded-b-none md:h-56"
             />
           </div>

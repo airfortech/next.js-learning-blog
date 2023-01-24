@@ -24,7 +24,7 @@ When it was first released , React didn’t have an officially supported way to 
 
 About the same time React was released to the public, some other Facebook engineers introduced a blueprint for how they created front end applications - the Flux architecture. It complimented React’s component-centric design by having a unidirectional data flow, which made things both easy to follow and simple to understand.
 
-```js
+```js {2, 5-8}
 const rehypePrism = require('@mapbox/rehype-prism')
 module.exports = {
   module: {

@@ -7,8 +7,6 @@ import { markdownParser } from "@/utils/markdownParser";
 const ProjectsPage = ({
   projects,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  console.log("data", projects);
-
   return (
     <div className="">
       <Head>
